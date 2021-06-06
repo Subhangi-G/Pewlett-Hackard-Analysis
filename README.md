@@ -23,9 +23,12 @@ The following infomation was retrieved for them from the different tables, and e
 - Titles they have held at Pewlett-Hackard
 - The range of dates when they have been employed at Pewlett-Hackard\
 This was edited into another table that had only the most recent titles that the employees held or are currently holding (Figure showing part of the table is below), and was exported as unique_titles.csv
-(Fig. insert).
+
+![unique_titles](https://user-images.githubusercontent.com/71800628/120910606-db58b900-c645-11eb-935f-d3292bbb105d.png)
+
 A third table was created that had the count of the different titles of the current or previous employees that were identified as eligible for retirement, and was exported as retiring_titles.csv. 
-(Fig. insert)
+
+![retiring_titles_original](https://user-images.githubusercontent.com/71800628/120910611-e6134e00-c645-11eb-9da0-7f14dd33bcc0.png)
 
 ### Part 2:Indentifying employees eligible for mentorship programs.
 Current employees with birth dates in the year 1965 were considered. These would be senior employees (by age) who are not yet in the retirement age.\
@@ -37,7 +40,8 @@ A table was created to hold the following information,
 - Date confirming the currently employeed status in the company.
 - Title held at the current time.\
 (Some of the employees may have had more than one title in the company but here only their current title is considered. Figure showing part of the table is below.)
-(Fig. insert)
+
+![mentorship_eligibility](https://user-images.githubusercontent.com/71800628/120910621-f3c8d380-c645-11eb-915e-f0bcdd292242.png)
 
 ## Analysis
 1. The total number of employees who will be eligible for retirement is 72,458.\
@@ -66,7 +70,7 @@ WHERE (e.birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 GROUP BY ti.title
 ORDER BY COUNT(title) DESC;
 ```
-(figure of table)
+![retiring_titles_accurate](https://user-images.githubusercontent.com/71800628/120910629-0216ef80-c646-11eb-9b70-bf867fd58510.png)
 
 3. Positions that require mentorship or training will need to be indentified.\
 Establishment of a knowledge transfer pathway that will be documented, and used to effectively communicate standard business practices to those who will fill in these positions, will aid in mentorship.
