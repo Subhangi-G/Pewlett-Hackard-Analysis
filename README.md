@@ -93,6 +93,5 @@ Please note that the "from_date" in the table obtained here is the date when the
 To address the above points, obtaining the following insights will be beneficial.
 - A table of the employees, who are likely to take the option of retirement, along with the regular attrition levels, filtered by titles in different departments will give an accurate representation of predicted vacancies.
 
-- A query returning employees who have served in the roles, defined for membership, for a required period of time.
-
-- Furthermore if the query is sorted by different departments, it'll help in establishing the criteria for mentorship.
+- A query returning employees who have served in the roles, defined for membership, for a required period of time.\
+Furthermore if the query is sorted by different departments, it'll help to establish if there are sufficient mentors in those departments for the expected number of new hires.
